@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.gray-back {
+    background-color: #F3F3F3;
+}
+
+.red-text {
+    color: darkred !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+/* Hero Styling */
+.hero {
+    background-image: url('./resources/app.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-download-mobile {
+    display: none;
+}
+
+.hero-left {
+    background-color: rgba(0,0,0,.5);
+    color: #ccc;
+    border: none;
+    border-radius: 12px;
+    width: 400px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.hero-left h3 {
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero-left p {
+    font-size: 1rem;
+    margin: 12px 24px;
+}
+
+.hero-left button {
+    background-color: green;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #ccc;
+    font-family: 'Poppins';
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+
+.hero-left button:hover,
+.hero-right:hover,
+.download-btn:hover,
+.content-option button:hover,
+.hero-download-mobile:hover {
+    border: 1px solid green;
+    background-color: rgba(0,128,0,.4);
+    cursor: pointer;
+}
+
+.hero-right {
+    width: 120px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.hero i {
+    font-size: 18px;
+    margin-right: -4px;
+}
+
+/* Content Styling */
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 32px 20px;
+    justify-content: space-between;
+}
+
+.content-desc {
+    max-width: 65%;
+}
+
+.content-title {
+    font-weight: 500;
+    font-size: 80px;
+}
+
+.content-question {
+    font-weight: 500;
+    font-size: 40px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.content-detail {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+.content-detail span {
+    font-size: 20px;
+}
+
+.content-download.mobile {
+    display: none;
+}
+
+.download-btn {
+    border: none;
+    padding: 10px 16px;
+    font-family: 'Poppins';
+    border-radius: 4px;
+    transition: .3s ease;
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 24px;
+    text-align: center;
+    background-color: gray;
+    color: #fff;
+}
+.content-subtitle {
+    font-size: 14px;
+    margin: 10px 0 16px;
+}
+
+.content-list-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* gap: 80px; */
+    text-align: center;
+    margin: 20px 0 10px;
+    column-gap: 16rem;
+    row-gap: 3.3rem;
+}
+
+.content-icon i {
+    font-size: 66px;
+    margin-bottom: 10px;
+}
+
+.content-icon p {
+    font-size: 14px;
+}
+
+.content-price {
+    padding: 32px 0;
+}
+
+.content-option-list {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    max-width: 95%;
+    margin: 32px auto;
+    row-gap: 16px;       /*for MOBILE*/
+}
+
+.content-option {
+    border: 1px solid #ccc;
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.content-option li:nth-child(1),
+.content-option li:nth-child(6),
+.content-option li:nth-child(7) {
+    padding: 30px 0;
+}
+
+.content-option li {
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.content-basic,
+.content-premium {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content-option-price {
+    font-size: 30px;
+    color: gray;
+}
+
+.content-option span {
+    font-weight: bold;
+}
+
+.content-option button {
+    padding: 16px 10px;
+    width: 40%;
+    font-family: 'Poppins';
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.content-option button i,
+.content-desc i {
+    font-size: 18px;
+    margin-right: 4px;
+    font-weight: bold
+}
+
+/* Footer Styling */
+.footer {
+    padding: 32px;
+}
+
+.content-contact {
+    margin: 0 4px 8px 0;
+}
+
+.content-contact i,
+.content-download i {
+    font-size: 24px;
+    transition: all .3s ease;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: #000;
+    transition: .3s ease;
+}
+
+.footer a:hover,
+.content-contact i:hover {
+    color: darkgreen;
+}
+
+.footer a:active,
+.footer a:focus {
+    color: palevioletred;
+}
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+    .hero {
+        padding: 0;
+        height: 70vh;
+    }
+
+    .hero-left {
+        display: none;
+    }
+
+    .hero-right {
+        width: 100%;
+        border-radius: 0;
+        background-color: #000;
+        padding: 12px 0;
+    }
+
+    .hero-download-mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border: none;
+        background-color: green;
+        padding: 12px;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Poppins';
+        transition: .3s ease;
+    }
+
+    .hero,
+    .content-wrapper,
+    .content-option-list {
+        flex-direction: column;
+    }
+
+    .content-title {
+        font-size: 75px;
+    }
+
+    .content-download.mobile {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .content-download.desktop {
+        display: none;
+    }
+
+    .content-desc {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .content-list-features {
+        column-gap: 25px;
+        row-gap: 20px;
+    }
+}
